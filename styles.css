@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  color: #ffff;
+  background-color: #141414;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+main.card {
+  border-radius: 1rem;
+  background-color: #1f1f1f;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.profile {
+  padding: 1rem;
+}
+
+section.profile > header > figure.profile-image-container {
+  text-align: center;
+}
+
+section.profile > header > figure.profile-image-container > img {
+  border-radius: 4rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: contain;
+}
+
+section.profile-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section.profile-info > h1 {
+  font-size: 1.6rem;
+}
+
+span.highlight {
+  color: #c4f82a;
+}
+
+.socials {
+  padding: 0rem 1rem;
+}
+
+.socials > ul.socials-links {
+  list-style: none;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.socials > ul.socials-links > button {
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: #333333;
+  color: #ffff;
+  margin: 0.5rem 0rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.socials > ul.socials-links > button:hover {
+  background-color: #c4f82a;
+  cursor: pointer;
+}
+
+.socials > ul.socials-links > button:hover > li > a {
+  color: #333333;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #c4f82a;
+}
+
+/* ============================================
+   MEDIA QUERIES BOILERPLATE
+   Mobile-First Approach
+   ============================================ */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  main.card {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops, 1024px and up) */
+@media (min-width: 1024px) {
+  main.card {
+    width: 50%;
+  }
+}
+
+/* Extra-large devices (laptops, 1440px and up) */
+@media (min-width: 1440px) {
+  main.card {
+    width: 35%;
+  }
+}
+
+/* Extra-wide screens (2560px and up) */
+@media (min-width: 2560px) {
+  main.card {
+    width: 20%;
+  }
+}
